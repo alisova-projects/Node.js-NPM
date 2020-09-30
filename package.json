@@ -1,0 +1,28 @@
+{
+  "name": "Node.js-NPM",
+  "version": "1.0.0",
+  "description": "NPM basics",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisova-projects/Node.js-NPM.git"
+  },
+  "keywords": [],
+  "author": "Elena Alisova <elenie@ukr.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisova-projects/Node.js-NPM/issues"
+  },
+  "homepage": "https://github.com/alisova-projects/Node.js-NPM#readme",
+  "dependencies": {
+    "joi": "^17.2.1",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
