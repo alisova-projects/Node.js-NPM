@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url /Node.js-NPM/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,12 +19,14 @@
   "bugs": {
     "url": "https://github.com/alisova-projects/Node.js-NPM/issues"
   },
-  "homepage": "https://github.com/alisova-projects/Node.js-NPM#readme",
+  "homepage": "https://alisova-projects.github.io/Node.js-NPM",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "joi": "^17.2.1",
     "shortid": "^2.2.15"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   }
 }
